@@ -16,6 +16,7 @@ body {
 	margin: 50px auto;
 }
 header {
+	position: relative;
 	.logo {
 		font-size: 20px;
 	}
@@ -67,6 +68,27 @@ header {
 				opacity: 0.5;
 			}
 		}
+	}
+
+	.shop-cart-btn {
+		float: right;
+		cursor: pointer;
+		transition: color 0.3s ease;
+
+		&:hover,
+		&.active {
+			color: #dc3d3d;
+		}
+	}
+	.shop-cart {
+		z-index: 1;
+		position: absolute;
+		top: 30px;
+		right: 0;
+		width: 450px;
+		min-height: 200px;
+		background: #fafafa;
+		box-shadow: 5px 5px 10px 5px rgba(68, 66, 66, 0.278);
 	}
 }
 
