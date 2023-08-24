@@ -86,9 +86,31 @@ header {
 		top: 30px;
 		right: 0;
 		width: 450px;
-		min-height: 200px;
 		background: #fafafa;
 		box-shadow: 5px 5px 10px 5px rgba(68, 66, 66, 0.278);
+
+		padding: 20px;
+		padding-bottom: 0;
+	}
+	.order {
+		width: 100%;
+		float: left;
+		margin-bottom: 20px;
+		img {
+			height: 70px;
+			width: 70px;
+			float: left;
+			margin-right: 20px;
+			border: 1px solid rgb(181, 178, 178);
+		}
+		h2 {
+			font-size: 18px;
+			margin-bottom: 10px;
+		}
+	}
+	.empty {
+		margin-bottom: 20px;
+		font-weight: 600;
 	}
 }
 
