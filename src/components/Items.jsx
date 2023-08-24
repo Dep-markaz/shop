@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import Item from './Item'
 
-const Items = ({ items }) => {
+const Items = ({ items, onAdd }) => {
 	return (
 		<main>
 			{items.map((el) => {
-				return <Item key={el.id} item={el} />
+				return <Item key={el.id} item={el} onAdd={onAdd} />
 			})}
 		</main>
 	)
